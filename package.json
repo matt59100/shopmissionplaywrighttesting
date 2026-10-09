@@ -1,0 +1,15 @@
+{
+  "name": "techhub-e2e",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "report": "node scripts/serve-report.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^26.6.4",
+    "dotenv": "^18.0.6"
+  }
+}

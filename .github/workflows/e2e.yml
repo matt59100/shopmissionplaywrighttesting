@@ -1,0 +1,63 @@
+name: Tests E2E
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * 1-5' # du lundi au vendredi à 6h UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write # publication du rapport sur la branche gh-pages
+
+# Une seule exécution à la fois : chaque run relit et republie l'historique
+concurrency:
+  group: e2e-report
+  cancel-in-progress: false
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      # Récupère le rapport déjà publié pour conserver l'historique des exécutions
+      - name: Récupérer l'historique publié
+        uses: actions/checkout@v4
+        continue-on-error: true # la branche gh-pages n'existe pas encore au premier run
+        with:
+          ref: gh-pages
+          path: test-history
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      - name: Installer Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Lancer les tests
+        run: npx playwright test
+        env:
+          TEST_USER_EMAIL: ${{ secrets.TEST_USER_EMAIL }}
+          TEST_USER_PASSWORD: ${{ secrets.TEST_USER_PASSWORD }}
+
+      - name: Préparer la publication
+        if: ${{ !cancelled() }}
+        run: rm -rf test-history/.git
+
+      # Publie le rapport même si des tests ont échoué
+      - name: Publier le rapport sur GitHub Pages
+        if: ${{ !cancelled() }}
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./test-history
+          publish_branch: gh-pages
+          force_orphan: true # un seul commit sur gh-pages : la branche ne grossit pas avec les traces
+          commit_message: 'Rapport E2E'
