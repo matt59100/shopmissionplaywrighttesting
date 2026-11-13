@@ -1,0 +1,570 @@
+{
+  "title": "TechHub — Tests E2E",
+  "runs": [
+    {
+      "id": "2026-10-23T11-24-33-729Z",
+      "startedAt": "2026-10-23T11:24:33.729Z",
+      "duration": 6493.804999999999,
+      "status": "failed",
+      "stats": {
+        "passed": 2,
+        "failed": 1,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "ci": {
+        "branch": "main",
+        "sha": "056f903",
+        "event": "schedule",
+        "url": "https://github.com/matt59100/shopmissionplaywrighttesting/actions/runs/39945787114"
+      },
+      "tests": [
+        {
+          "id": "55de279fc869e06b67b9-8d0c9f51ddf3db196808",
+          "title": "affiche un toast de confirmation et met à jour le badge panier",
+          "titlePath": [
+            "Ajout au panier"
+          ],
+          "file": "add-to-cart.spec.ts",
+          "line": 6,
+          "project": "chromium",
+          "status": "passed",
+          "duration": 2347,
+          "attempts": [
+            {
+              "status": "passed",
+              "duration": 2347,
+              "screenshots": [],
+              "trace": "runs/2026-10-23T11-24-33-729Z/55de279fc869e06b67b9-8d0c9f51ddf3db196808-0-trace.zip"
+            }
+          ]
+        },
+        {
+          "id": "55de279fc869e06b67b9-1021ddce8d09f845c11c",
+          "title": "retrouve le produit dans le panier après ajout (navigation SPA)",
+          "titlePath": [
+            "Ajout au panier"
+          ],
+          "file": "add-to-cart.spec.ts",
+          "line": 26,
+          "project": "chromium",
+          "status": "passed",
+          "duration": 2515,
+          "attempts": [
+            {
+              "status": "passed",
+              "duration": 2515,
+              "screenshots": [],
+              "trace": "runs/2026-10-23T11-24-33-729Z/55de279fc869e06b67b9-1021ddce8d09f845c11c-0-trace.zip"
+            }
+          ]
+        },
+        {
+          "id": "25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17",
+          "title": "utilisateur connecté : ajout au panier puis commande complète",
+          "titlePath": [
+            "Checkout"
+          ],
+          "file": "checkout.spec.ts",
+          "line": 6,
+          "project": "chromium",
+          "status": "failed",
+          "duration": 168,
+          "attempts": [
+            {
+              "status": "failed",
+              "duration": 155,
+              "screenshots": [
+                "runs/2026-10-23T11-24-33-729Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-0-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-23T11-24-33-729Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-0-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            },
+            {
+              "status": "failed",
+              "duration": 168,
+              "screenshots": [
+                "runs/2026-10-23T11-24-33-729Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-1-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-23T11-24-33-729Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-1-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            },
+            {
+              "status": "failed",
+              "duration": 168,
+              "screenshots": [
+                "runs/2026-10-23T11-24-33-729Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-2-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-23T11-24-33-729Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-2-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-10-22T11-35-19-718Z",
+      "startedAt": "2026-10-22T11:35:19.718Z",
+      "duration": 5307.669,
+      "status": "failed",
+      "stats": {
+        "passed": 2,
+        "failed": 1,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "ci": {
+        "branch": "main",
+        "sha": "056f903",
+        "event": "schedule",
+        "url": "https://github.com/matt59100/shopmissionplaywrighttesting/actions/runs/39771637775"
+      },
+      "tests": [
+        {
+          "id": "55de279fc869e06b67b9-8d0c9f51ddf3db196808",
+          "title": "affiche un toast de confirmation et met à jour le badge panier",
+          "titlePath": [
+            "Ajout au panier"
+          ],
+          "file": "add-to-cart.spec.ts",
+          "line": 6,
+          "project": "chromium",
+          "status": "passed",
+          "duration": 2008,
+          "attempts": [
+            {
+              "status": "passed",
+              "duration": 2008,
+              "screenshots": [],
+              "trace": "runs/2026-10-22T11-35-19-718Z/55de279fc869e06b67b9-8d0c9f51ddf3db196808-0-trace.zip"
+            }
+          ]
+        },
+        {
+          "id": "55de279fc869e06b67b9-1021ddce8d09f845c11c",
+          "title": "retrouve le produit dans le panier après ajout (navigation SPA)",
+          "titlePath": [
+            "Ajout au panier"
+          ],
+          "file": "add-to-cart.spec.ts",
+          "line": 26,
+          "project": "chromium",
+          "status": "passed",
+          "duration": 2147,
+          "attempts": [
+            {
+              "status": "passed",
+              "duration": 2147,
+              "screenshots": [],
+              "trace": "runs/2026-10-22T11-35-19-718Z/55de279fc869e06b67b9-1021ddce8d09f845c11c-0-trace.zip"
+            }
+          ]
+        },
+        {
+          "id": "25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17",
+          "title": "utilisateur connecté : ajout au panier puis commande complète",
+          "titlePath": [
+            "Checkout"
+          ],
+          "file": "checkout.spec.ts",
+          "line": 6,
+          "project": "chromium",
+          "status": "failed",
+          "duration": 163,
+          "attempts": [
+            {
+              "status": "failed",
+              "duration": 173,
+              "screenshots": [
+                "runs/2026-10-22T11-35-19-718Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-0-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-22T11-35-19-718Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-0-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            },
+            {
+              "status": "failed",
+              "duration": 177,
+              "screenshots": [
+                "runs/2026-10-22T11-35-19-718Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-1-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-22T11-35-19-718Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-1-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            },
+            {
+              "status": "failed",
+              "duration": 163,
+              "screenshots": [
+                "runs/2026-10-22T11-35-19-718Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-2-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-22T11-35-19-718Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-2-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-10-21T11-35-24-002Z",
+      "startedAt": "2026-10-21T11:35:24.002Z",
+      "duration": 6235.809,
+      "status": "failed",
+      "stats": {
+        "passed": 2,
+        "failed": 1,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "ci": {
+        "branch": "main",
+        "sha": "056f903",
+        "event": "schedule",
+        "url": "https://github.com/matt59100/shopmissionplaywrighttesting/actions/runs/39592978446"
+      },
+      "tests": [
+        {
+          "id": "55de279fc869e06b67b9-8d0c9f51ddf3db196808",
+          "title": "affiche un toast de confirmation et met à jour le badge panier",
+          "titlePath": [
+            "Ajout au panier"
+          ],
+          "file": "add-to-cart.spec.ts",
+          "line": 6,
+          "project": "chromium",
+          "status": "passed",
+          "duration": 1802,
+          "attempts": [
+            {
+              "status": "passed",
+              "duration": 1802,
+              "screenshots": [],
+              "trace": "runs/2026-10-21T11-35-24-002Z/55de279fc869e06b67b9-8d0c9f51ddf3db196808-0-trace.zip"
+            }
+          ]
+        },
+        {
+          "id": "25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17",
+          "title": "utilisateur connecté : ajout au panier puis commande complète",
+          "titlePath": [
+            "Checkout"
+          ],
+          "file": "checkout.spec.ts",
+          "line": 6,
+          "project": "chromium",
+          "status": "failed",
+          "duration": 127,
+          "attempts": [
+            {
+              "status": "failed",
+              "duration": 124,
+              "screenshots": [
+                "runs/2026-10-21T11-35-24-002Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-0-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-21T11-35-24-002Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-0-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            },
+            {
+              "status": "failed",
+              "duration": 124,
+              "screenshots": [
+                "runs/2026-10-21T11-35-24-002Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-1-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-21T11-35-24-002Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-1-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            },
+            {
+              "status": "failed",
+              "duration": 127,
+              "screenshots": [
+                "runs/2026-10-21T11-35-24-002Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-2-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-21T11-35-24-002Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-2-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            }
+          ]
+        },
+        {
+          "id": "55de279fc869e06b67b9-1021ddce8d09f845c11c",
+          "title": "retrouve le produit dans le panier après ajout (navigation SPA)",
+          "titlePath": [
+            "Ajout au panier"
+          ],
+          "file": "add-to-cart.spec.ts",
+          "line": 26,
+          "project": "chromium",
+          "status": "passed",
+          "duration": 2036,
+          "attempts": [
+            {
+              "status": "passed",
+              "duration": 2036,
+              "screenshots": [],
+              "trace": "runs/2026-10-21T11-35-24-002Z/55de279fc869e06b67b9-1021ddce8d09f845c11c-0-trace.zip"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-10-20T11-19-47-632Z",
+      "startedAt": "2026-10-20T11:19:47.632Z",
+      "duration": 5840.117,
+      "status": "failed",
+      "stats": {
+        "passed": 2,
+        "failed": 1,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "ci": {
+        "branch": "main",
+        "sha": "056f903",
+        "event": "schedule",
+        "url": "https://github.com/matt59100/shopmissionplaywrighttesting/actions/runs/39414092371"
+      },
+      "tests": [
+        {
+          "id": "55de279fc869e06b67b9-8d0c9f51ddf3db196808",
+          "title": "affiche un toast de confirmation et met à jour le badge panier",
+          "titlePath": [
+            "Ajout au panier"
+          ],
+          "file": "add-to-cart.spec.ts",
+          "line": 6,
+          "project": "chromium",
+          "status": "passed",
+          "duration": 1966,
+          "attempts": [
+            {
+              "status": "passed",
+              "duration": 1966,
+              "screenshots": [],
+              "trace": "runs/2026-10-20T11-19-47-632Z/55de279fc869e06b67b9-8d0c9f51ddf3db196808-0-trace.zip"
+            }
+          ]
+        },
+        {
+          "id": "25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17",
+          "title": "utilisateur connecté : ajout au panier puis commande complète",
+          "titlePath": [
+            "Checkout"
+          ],
+          "file": "checkout.spec.ts",
+          "line": 6,
+          "project": "chromium",
+          "status": "failed",
+          "duration": 133,
+          "attempts": [
+            {
+              "status": "failed",
+              "duration": 125,
+              "screenshots": [
+                "runs/2026-10-20T11-19-47-632Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-0-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-20T11-19-47-632Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-0-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            },
+            {
+              "status": "failed",
+              "duration": 142,
+              "screenshots": [
+                "runs/2026-10-20T11-19-47-632Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-1-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-20T11-19-47-632Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-1-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            },
+            {
+              "status": "failed",
+              "duration": 133,
+              "screenshots": [
+                "runs/2026-10-20T11-19-47-632Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-2-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-20T11-19-47-632Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-2-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            }
+          ]
+        },
+        {
+          "id": "55de279fc869e06b67b9-1021ddce8d09f845c11c",
+          "title": "retrouve le produit dans le panier après ajout (navigation SPA)",
+          "titlePath": [
+            "Ajout au panier"
+          ],
+          "file": "add-to-cart.spec.ts",
+          "line": 26,
+          "project": "chromium",
+          "status": "passed",
+          "duration": 2215,
+          "attempts": [
+            {
+              "status": "passed",
+              "duration": 2215,
+              "screenshots": [],
+              "trace": "runs/2026-10-20T11-19-47-632Z/55de279fc869e06b67b9-1021ddce8d09f845c11c-0-trace.zip"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-10-19T12-50-12-303Z",
+      "startedAt": "2026-10-19T12:50:12.303Z",
+      "duration": 4917.707,
+      "status": "failed",
+      "stats": {
+        "passed": 2,
+        "failed": 1,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "ci": {
+        "branch": "main",
+        "sha": "056f903",
+        "event": "schedule",
+        "url": "https://github.com/matt59100/shopmissionplaywrighttesting/actions/runs/39255092058"
+      },
+      "tests": [
+        {
+          "id": "55de279fc869e06b67b9-8d0c9f51ddf3db196808",
+          "title": "affiche un toast de confirmation et met à jour le badge panier",
+          "titlePath": [
+            "Ajout au panier"
+          ],
+          "file": "add-to-cart.spec.ts",
+          "line": 6,
+          "project": "chromium",
+          "status": "passed",
+          "duration": 2056,
+          "attempts": [
+            {
+              "status": "passed",
+              "duration": 2056,
+              "screenshots": [],
+              "trace": "runs/2026-10-19T12-50-12-303Z/55de279fc869e06b67b9-8d0c9f51ddf3db196808-0-trace.zip"
+            }
+          ]
+        },
+        {
+          "id": "25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17",
+          "title": "utilisateur connecté : ajout au panier puis commande complète",
+          "titlePath": [
+            "Checkout"
+          ],
+          "file": "checkout.spec.ts",
+          "line": 6,
+          "project": "chromium",
+          "status": "failed",
+          "duration": 139,
+          "attempts": [
+            {
+              "status": "failed",
+              "duration": 146,
+              "screenshots": [
+                "runs/2026-10-19T12-50-12-303Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-0-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-19T12-50-12-303Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-0-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            },
+            {
+              "status": "failed",
+              "duration": 135,
+              "screenshots": [
+                "runs/2026-10-19T12-50-12-303Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-1-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-19T12-50-12-303Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-1-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            },
+            {
+              "status": "failed",
+              "duration": 139,
+              "screenshots": [
+                "runs/2026-10-19T12-50-12-303Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-2-0-test-failed-1.png"
+              ],
+              "trace": "runs/2026-10-19T12-50-12-303Z/25ab1bfc84c57e3e3a45-1478f86a482a21e6bc17-2-trace.zip",
+              "error": {
+                "message": "Error: TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login",
+                "snippet": "   at ../fixtures/index.ts:46\n\n  44 |     const password = process.env.TEST_USER_PASSWORD;\n  45 |     if (!email || !password) {\n> 46 |       throw new Error('TEST_USER_EMAIL et TEST_USER_PASSWORD doivent être définis (fichier .env) pour utiliser la fixture login');\n     |             ^\n  47 |     }\n  48 |\n  49 |     await use(async () => {",
+                "location": "../fixtures/index.ts:46"
+              }
+            }
+          ]
+        },
+        {
+          "id": "55de279fc869e06b67b9-1021ddce8d09f845c11c",
+          "title": "retrouve le produit dans le panier après ajout (navigation SPA)",
+          "titlePath": [
+            "Ajout au panier"
+          ],
+          "file": "add-to-cart.spec.ts",
+          "line": 26,
+          "project": "chromium",
+          "status": "passed",
+          "duration": 2294,
+          "attempts": [
+            {
+              "status": "passed",
+              "duration": 2294,
+              "screenshots": [],
+              "trace": "runs/2026-10-19T12-50-12-303Z/55de279fc869e06b67b9-1021ddce8d09f845c11c-0-trace.zip"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
